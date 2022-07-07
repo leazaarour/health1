@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px 
 from plotly.subplots import make_subplots
-df= pd.read_csv('/Users/leazaarour/Desktop/insurance.csv')
+df= pd.read_csv('insurance.csv')
 
 with st.sidebar.header('1.Upload your CSV data'):
         uploaded_file= st.sidebar.file_uploader('Upload your input CSV file')
@@ -22,7 +22,7 @@ if selected=="Home":
         st.subheader("Furthermore, many factors affect the amount of the insurance charge, the factors that are discovered in this study are the gender, if the person smokes or not, the bmi and the number of children.")
 if selected=="Exploratory Data Analysis":
     #loading the dataset
-        df= pd.read_csv('/Users/leazaarour/Desktop/insurance.csv')
+        df= pd.read_csv('insurance.csv')
         #Exploratory Data Analysis
         st.title("Exploratory Data Analysis")
         st.subheader("1. Visualizing how charges are distributed according to given factors")
