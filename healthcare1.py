@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px 
 from plotly.subplots import make_subplots
 df= pd.read_csv('insurance.csv')
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 with st.sidebar.header('1.Upload your CSV data'):
         uploaded_file= st.sidebar.file_uploader('Upload your input CSV file')
